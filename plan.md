@@ -2,7 +2,7 @@
 
 ## Overview
 
-Convert the static HTML/CSS/JS portfolio template "2156 Graphite Creative" into a modern Next.js 16 (App Router) application with TypeScript and shadcn/ui. The result is a fully type-safe, component-driven site that preserves the original dark-mode aesthetic using Tailwind CSS v4 and shadcn/ui primitives.
+Convert the static HTML/CSS/JS portfolio template "2156 Graphite Creative" into a modern Next.js 15 (App Router) application with TypeScript and shadcn/ui. The result is a fully type-safe, component-driven site that preserves the original dark-mode aesthetic using Tailwind CSS v4 and shadcn/ui primitives.
 
 **Status: Implementation complete. Build passing.**
 
@@ -29,7 +29,7 @@ Convert the static HTML/CSS/JS portfolio template "2156 Graphite Creative" into 
 ## Actual Architecture
 
 ```
-creative/                       ← Next.js 16.2.2 project root
+creative/                       ← Next.js 15.x project root
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx              ← Root layout (metadata, global CSS, Header, Footer)
@@ -72,7 +72,7 @@ creative/                       ← Next.js 16.2.2 project root
 
 | Package | Version | Notes |
 |---|---|---|
-| `next` | 16.2.2 | App Router, Turbopack dev |
+| `next` | ^15.5.14 | App Router, Turbopack dev |
 | `react` / `react-dom` | 19.2.4 | |
 | `tailwindcss` | ^4 | CSS-first, no tailwind.config.ts |
 | `shadcn` | 4.1.2 | Uses `@base-ui/react` (not Radix UI) |
@@ -243,7 +243,7 @@ npm start
 
 ## Deliverables Checklist
 
-- [x] Next.js 16.2.2 App Router project with TypeScript
+- [x] Next.js 15.x App Router project with TypeScript
 - [x] shadcn/ui 4.1.2 with Tailwind v4 (CSS-first, no tailwind.config.ts)
 - [x] All 9 images in `public/images/`
 - [x] Graphite dark theme tokens in globals.css
